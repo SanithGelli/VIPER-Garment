@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3PX-fK-HMf">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Garments View Controller-->
+        <scene sceneID="EcQ-T2-9Rm">
+            <objects>
+                <viewController storyboardIdentifier="GarmentsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3PX-fK-HMf" customClass="GarmentsViewController" customModule="Garmentt" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bSg-3U-CE3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="sd1-lB-NUL">
+                                <rect key="frame" x="0.0" y="124" width="414" height="738"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="garmentsCell" id="wg3-yz-Zxd">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="22.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wg3-yz-Zxd" id="8xn-sq-xg6">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="22.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Diw-sq-DgY">
+                                                    <rect key="frame" x="20" y="11" width="374" height="0.5"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Diw-sq-DgY" firstAttribute="leading" secondItem="8xn-sq-xg6" secondAttribute="leadingMargin" id="hrD-xp-o2t"/>
+                                                <constraint firstItem="Diw-sq-DgY" firstAttribute="top" secondItem="8xn-sq-xg6" secondAttribute="topMargin" id="ifv-pJ-pDs"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Diw-sq-DgY" secondAttribute="trailing" id="nyU-jX-cfa"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Diw-sq-DgY" secondAttribute="bottom" id="wRw-R4-aVk"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="3PX-fK-HMf" id="7YJ-Ml-qio"/>
+                                </connections>
+                            </tableView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="l9l-9l-pCg">
+                                <rect key="frame" x="10" y="54" width="394" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="W5A-gf-JBW"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Alphabet"/>
+                                    <segment title="Creation Time"/>
+                                </segments>
+                                <connections>
+                                    <action selector="didChangedSortType:" destination="3PX-fK-HMf" eventType="valueChanged" id="CHu-FU-BMl"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5ML-3C-hXk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="l9l-9l-pCg" firstAttribute="leading" secondItem="5ML-3C-hXk" secondAttribute="leading" constant="10" id="H3e-R8-Nuo"/>
+                            <constraint firstItem="l9l-9l-pCg" firstAttribute="top" secondItem="5ML-3C-hXk" secondAttribute="top" constant="10" id="K5Q-Q7-pj6"/>
+                            <constraint firstItem="sd1-lB-NUL" firstAttribute="leading" secondItem="5ML-3C-hXk" secondAttribute="leading" id="XIK-84-Tp1"/>
+                            <constraint firstItem="sd1-lB-NUL" firstAttribute="top" secondItem="l9l-9l-pCg" secondAttribute="bottom" constant="20" id="arW-0T-v9s"/>
+                            <constraint firstItem="5ML-3C-hXk" firstAttribute="trailing" secondItem="sd1-lB-NUL" secondAttribute="trailing" id="hv0-WH-fS8"/>
+                            <constraint firstItem="5ML-3C-hXk" firstAttribute="trailing" secondItem="l9l-9l-pCg" secondAttribute="trailing" constant="10" id="mHk-mF-SjI"/>
+                            <constraint firstItem="5ML-3C-hXk" firstAttribute="bottom" secondItem="sd1-lB-NUL" secondAttribute="bottom" id="r4P-Gc-E0B"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="garmentsTableView" destination="sd1-lB-NUL" id="b3v-fP-LxM"/>
+                        <outlet property="rightBabrButtonItem" destination="Wuu-Lh-qI1" id="KpU-P6-OQ7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zCB-Ft-wEc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <barButtonItem image="plus" catalog="system" id="Wuu-Lh-qI1">
+                    <connections>
+                        <action selector="addGarment:" destination="3PX-fK-HMf" id="95e-gN-TmC"/>
+                    </connections>
+                </barButtonItem>
+            </objects>
+            <point key="canvasLocation" x="780" y="-60"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,637 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F14B10C28672D8700BA6D85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F14B10B28672D8700BA6D85 /* AppDelegate.swift */; };
+		5F14B10E28672D8700BA6D85 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F14B10D28672D8700BA6D85 /* SceneDelegate.swift */; };
+		5F14B11328672D8700BA6D85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F14B11128672D8700BA6D85 /* Main.storyboard */; };
+		5F14B11628672D8700BA6D85 /* Garmentt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5F14B11428672D8700BA6D85 /* Garmentt.xcdatamodeld */; };
+		5F14B11828672D8B00BA6D85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F14B11728672D8B00BA6D85 /* Assets.xcassets */; };
+		5F14B11B28672D8B00BA6D85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F14B11928672D8B00BA6D85 /* LaunchScreen.storyboard */; };
+		5F14B1432867358000BA6D85 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F14B1422867358000BA6D85 /* CoreDataManager.swift */; };
+		5F14B1462867485A00BA6D85 /* GarmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F14B1452867485A00BA6D85 /* GarmentsViewController.swift */; };
+		5F14B1482867492B00BA6D85 /* GarmentsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F14B1472867492B00BA6D85 /* GarmentsRouter.swift */; };
+		5F14B14B286749C400BA6D85 /* GarmentsContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F14B14A286749C400BA6D85 /* GarmentsContract.swift */; };
+		5F14B14D28674AF200BA6D85 /* GarmentsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F14B14C28674AF200BA6D85 /* GarmentsPresenter.swift */; };
+		5F14B14F2868191B00BA6D85 /* GarmentsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F14B14E2868191B00BA6D85 /* GarmentsInteractor.swift */; };
+		5F14B15128681A2500BA6D85 /* GarmentsDataHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F14B15028681A2500BA6D85 /* GarmentsDataHandling.swift */; };
+		5F4C55822868895B00177A2C /* AddGarmentPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4C55812868895B00177A2C /* AddGarmentPresenterTests.swift */; };
+		5F4C5584286889A500177A2C /* MockAddGarmentInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4C5583286889A500177A2C /* MockAddGarmentInteractor.swift */; };
+		5F4C5586286889B000177A2C /* MockAddGarmentRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4C5585286889B000177A2C /* MockAddGarmentRouter.swift */; };
+		5F4C558828688A6600177A2C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4C558728688A6600177A2C /* Constants.swift */; };
+		5F4C558B28688E1D00177A2C /* GarmentsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4C558A28688E1D00177A2C /* GarmentsPresenterTests.swift */; };
+		5F4C558D28688E5A00177A2C /* MockGarmentsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4C558C28688E5900177A2C /* MockGarmentsRouter.swift */; };
+		5F4C558F28688E6300177A2C /* MockGarmentsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4C558E28688E6300177A2C /* MockGarmentsInteractor.swift */; };
+		5F4C559128688E7400177A2C /* MockGarmentsDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4C559028688E7400177A2C /* MockGarmentsDisplay.swift */; };
+		5FEB3BAB28684A0D0065951A /* GarmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEB3BAA28684A0D0065951A /* GarmentViewModel.swift */; };
+		5FEB3BAE286856160065951A /* AddGarmentContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEB3BAD286856160065951A /* AddGarmentContract.swift */; };
+		5FEB3BB0286856AC0065951A /* AddGarmentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEB3BAF286856AC0065951A /* AddGarmentPresenter.swift */; };
+		5FEB3BB228685C990065951A /* AddGarmentInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEB3BB128685C990065951A /* AddGarmentInteractor.swift */; };
+		5FEB3BB428685CCD0065951A /* AddGarmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEB3BB328685CCD0065951A /* AddGarmentViewController.swift */; };
+		5FEB3BB628685D740065951A /* AddGarment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FEB3BB528685D740065951A /* AddGarment.storyboard */; };
+		5FEB3BB828685E5A0065951A /* AddGarmentRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEB3BB728685E5A0065951A /* AddGarmentRouter.swift */; };
+		5FEB3BBA286867500065951A /* GarmentSorter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEB3BB9286867500065951A /* GarmentSorter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F14B12228672D8B00BA6D85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F14B10028672D8700BA6D85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F14B10728672D8700BA6D85;
+			remoteInfo = Garmentt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5F14B10828672D8700BA6D85 /* Garmentt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Garmentt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F14B10B28672D8700BA6D85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5F14B10D28672D8700BA6D85 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5F14B11228672D8700BA6D85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5F14B11528672D8700BA6D85 /* Garmentt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Garmentt.xcdatamodel; sourceTree = "<group>"; };
+		5F14B11728672D8B00BA6D85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F14B11A28672D8B00BA6D85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5F14B11C28672D8B00BA6D85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F14B12128672D8B00BA6D85 /* GarmenttTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GarmenttTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F14B1422867358000BA6D85 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		5F14B1452867485A00BA6D85 /* GarmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarmentsViewController.swift; sourceTree = "<group>"; };
+		5F14B1472867492B00BA6D85 /* GarmentsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarmentsRouter.swift; sourceTree = "<group>"; };
+		5F14B14A286749C400BA6D85 /* GarmentsContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarmentsContract.swift; sourceTree = "<group>"; };
+		5F14B14C28674AF200BA6D85 /* GarmentsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarmentsPresenter.swift; sourceTree = "<group>"; };
+		5F14B14E2868191B00BA6D85 /* GarmentsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarmentsInteractor.swift; sourceTree = "<group>"; };
+		5F14B15028681A2500BA6D85 /* GarmentsDataHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarmentsDataHandling.swift; sourceTree = "<group>"; };
+		5F4C55812868895B00177A2C /* AddGarmentPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGarmentPresenterTests.swift; sourceTree = "<group>"; };
+		5F4C5583286889A500177A2C /* MockAddGarmentInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAddGarmentInteractor.swift; sourceTree = "<group>"; };
+		5F4C5585286889B000177A2C /* MockAddGarmentRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAddGarmentRouter.swift; sourceTree = "<group>"; };
+		5F4C558728688A6600177A2C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5F4C558A28688E1D00177A2C /* GarmentsPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarmentsPresenterTests.swift; sourceTree = "<group>"; };
+		5F4C558C28688E5900177A2C /* MockGarmentsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGarmentsRouter.swift; sourceTree = "<group>"; };
+		5F4C558E28688E6300177A2C /* MockGarmentsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGarmentsInteractor.swift; sourceTree = "<group>"; };
+		5F4C559028688E7400177A2C /* MockGarmentsDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGarmentsDisplay.swift; sourceTree = "<group>"; };
+		5FEB3BAA28684A0D0065951A /* GarmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarmentViewModel.swift; sourceTree = "<group>"; };
+		5FEB3BAD286856160065951A /* AddGarmentContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGarmentContract.swift; sourceTree = "<group>"; };
+		5FEB3BAF286856AC0065951A /* AddGarmentPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGarmentPresenter.swift; sourceTree = "<group>"; };
+		5FEB3BB128685C990065951A /* AddGarmentInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGarmentInteractor.swift; sourceTree = "<group>"; };
+		5FEB3BB328685CCD0065951A /* AddGarmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGarmentViewController.swift; sourceTree = "<group>"; };
+		5FEB3BB528685D740065951A /* AddGarment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddGarment.storyboard; sourceTree = "<group>"; };
+		5FEB3BB728685E5A0065951A /* AddGarmentRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGarmentRouter.swift; sourceTree = "<group>"; };
+		5FEB3BB9286867500065951A /* GarmentSorter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarmentSorter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F14B10528672D8700BA6D85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F14B11E28672D8B00BA6D85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F14B0FF28672D8700BA6D85 = {
+			isa = PBXGroup;
+			children = (
+				5F14B10A28672D8700BA6D85 /* Garmentt */,
+				5F14B12428672D8B00BA6D85 /* GarmenttTests */,
+				5F14B10928672D8700BA6D85 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5F14B10928672D8700BA6D85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F14B10828672D8700BA6D85 /* Garmentt.app */,
+				5F14B12128672D8B00BA6D85 /* GarmenttTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F14B10A28672D8700BA6D85 /* Garmentt */ = {
+			isa = PBXGroup;
+			children = (
+				5F14B10B28672D8700BA6D85 /* AppDelegate.swift */,
+				5F14B10D28672D8700BA6D85 /* SceneDelegate.swift */,
+				5FEB3BBB2868676E0065951A /* Utilities */,
+				5FEB3BAC286856030065951A /* AddGarment */,
+				5F14B1442867483A00BA6D85 /* Garments */,
+				E77A6D5328698829008EAABD /* CoreData */,
+				5F14B11128672D8700BA6D85 /* Main.storyboard */,
+				5F14B11728672D8B00BA6D85 /* Assets.xcassets */,
+				5F14B11928672D8B00BA6D85 /* LaunchScreen.storyboard */,
+				5F14B11C28672D8B00BA6D85 /* Info.plist */,
+				5F14B11428672D8700BA6D85 /* Garmentt.xcdatamodeld */,
+			);
+			path = Garmentt;
+			sourceTree = "<group>";
+		};
+		5F14B12428672D8B00BA6D85 /* GarmenttTests */ = {
+			isa = PBXGroup;
+			children = (
+				5F4C558928688DAD00177A2C /* GarmentsTests */,
+				5F4C5580286888AA00177A2C /* AddGarmentTests */,
+			);
+			path = GarmenttTests;
+			sourceTree = "<group>";
+		};
+		5F14B1442867483A00BA6D85 /* Garments */ = {
+			isa = PBXGroup;
+			children = (
+				5F14B1452867485A00BA6D85 /* GarmentsViewController.swift */,
+				5FEB3BB9286867500065951A /* GarmentSorter.swift */,
+				5F14B1472867492B00BA6D85 /* GarmentsRouter.swift */,
+				5F14B14C28674AF200BA6D85 /* GarmentsPresenter.swift */,
+				5F14B14A286749C400BA6D85 /* GarmentsContract.swift */,
+				5F14B14E2868191B00BA6D85 /* GarmentsInteractor.swift */,
+			);
+			path = Garments;
+			sourceTree = "<group>";
+		};
+		5F4C5580286888AA00177A2C /* AddGarmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				5F4C55812868895B00177A2C /* AddGarmentPresenterTests.swift */,
+				5F4C5583286889A500177A2C /* MockAddGarmentInteractor.swift */,
+				5F4C5585286889B000177A2C /* MockAddGarmentRouter.swift */,
+			);
+			path = AddGarmentTests;
+			sourceTree = "<group>";
+		};
+		5F4C558928688DAD00177A2C /* GarmentsTests */ = {
+			isa = PBXGroup;
+			children = (
+				5F4C558A28688E1D00177A2C /* GarmentsPresenterTests.swift */,
+				5F4C558C28688E5900177A2C /* MockGarmentsRouter.swift */,
+				5F4C558E28688E6300177A2C /* MockGarmentsInteractor.swift */,
+				5F4C559028688E7400177A2C /* MockGarmentsDisplay.swift */,
+			);
+			path = GarmentsTests;
+			sourceTree = "<group>";
+		};
+		5FEB3BAC286856030065951A /* AddGarment */ = {
+			isa = PBXGroup;
+			children = (
+				5FEB3BAD286856160065951A /* AddGarmentContract.swift */,
+				5FEB3BB728685E5A0065951A /* AddGarmentRouter.swift */,
+				5FEB3BB128685C990065951A /* AddGarmentInteractor.swift */,
+				5FEB3BAF286856AC0065951A /* AddGarmentPresenter.swift */,
+				5FEB3BB328685CCD0065951A /* AddGarmentViewController.swift */,
+				5FEB3BB528685D740065951A /* AddGarment.storyboard */,
+			);
+			path = AddGarment;
+			sourceTree = "<group>";
+		};
+		5FEB3BBB2868676E0065951A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5F4C558728688A6600177A2C /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		E77A6D5328698829008EAABD /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				5F14B1422867358000BA6D85 /* CoreDataManager.swift */,
+				5F14B15028681A2500BA6D85 /* GarmentsDataHandling.swift */,
+				5FEB3BAA28684A0D0065951A /* GarmentViewModel.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F14B10728672D8700BA6D85 /* Garmentt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F14B13528672D8B00BA6D85 /* Build configuration list for PBXNativeTarget "Garmentt" */;
+			buildPhases = (
+				5F14B10428672D8700BA6D85 /* Sources */,
+				5F14B10528672D8700BA6D85 /* Frameworks */,
+				5F14B10628672D8700BA6D85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Garmentt;
+			productName = Garmentt;
+			productReference = 5F14B10828672D8700BA6D85 /* Garmentt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5F14B12028672D8B00BA6D85 /* GarmenttTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F14B13828672D8B00BA6D85 /* Build configuration list for PBXNativeTarget "GarmenttTests" */;
+			buildPhases = (
+				5F14B11D28672D8B00BA6D85 /* Sources */,
+				5F14B11E28672D8B00BA6D85 /* Frameworks */,
+				5F14B11F28672D8B00BA6D85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F14B12328672D8B00BA6D85 /* PBXTargetDependency */,
+			);
+			name = GarmenttTests;
+			productName = GarmenttTests;
+			productReference = 5F14B12128672D8B00BA6D85 /* GarmenttTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F14B10028672D8700BA6D85 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					5F14B10728672D8700BA6D85 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					5F14B12028672D8B00BA6D85 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 5F14B10728672D8700BA6D85;
+					};
+				};
+			};
+			buildConfigurationList = 5F14B10328672D8700BA6D85 /* Build configuration list for PBXProject "Garmentt" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5F14B0FF28672D8700BA6D85;
+			productRefGroup = 5F14B10928672D8700BA6D85 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F14B10728672D8700BA6D85 /* Garmentt */,
+				5F14B12028672D8B00BA6D85 /* GarmenttTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F14B10628672D8700BA6D85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F14B11B28672D8B00BA6D85 /* LaunchScreen.storyboard in Resources */,
+				5F14B11828672D8B00BA6D85 /* Assets.xcassets in Resources */,
+				5F14B11328672D8700BA6D85 /* Main.storyboard in Resources */,
+				5FEB3BB628685D740065951A /* AddGarment.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F14B11F28672D8B00BA6D85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F14B10428672D8700BA6D85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FEB3BB0286856AC0065951A /* AddGarmentPresenter.swift in Sources */,
+				5FEB3BAE286856160065951A /* AddGarmentContract.swift in Sources */,
+				5F14B14B286749C400BA6D85 /* GarmentsContract.swift in Sources */,
+				5F14B14D28674AF200BA6D85 /* GarmentsPresenter.swift in Sources */,
+				5F14B1432867358000BA6D85 /* CoreDataManager.swift in Sources */,
+				5FEB3BB428685CCD0065951A /* AddGarmentViewController.swift in Sources */,
+				5FEB3BBA286867500065951A /* GarmentSorter.swift in Sources */,
+				5F14B1482867492B00BA6D85 /* GarmentsRouter.swift in Sources */,
+				5F14B10C28672D8700BA6D85 /* AppDelegate.swift in Sources */,
+				5FEB3BB228685C990065951A /* AddGarmentInteractor.swift in Sources */,
+				5FEB3BB828685E5A0065951A /* AddGarmentRouter.swift in Sources */,
+				5F14B10E28672D8700BA6D85 /* SceneDelegate.swift in Sources */,
+				5F14B14F2868191B00BA6D85 /* GarmentsInteractor.swift in Sources */,
+				5F14B15128681A2500BA6D85 /* GarmentsDataHandling.swift in Sources */,
+				5FEB3BAB28684A0D0065951A /* GarmentViewModel.swift in Sources */,
+				5F14B11628672D8700BA6D85 /* Garmentt.xcdatamodeld in Sources */,
+				5F14B1462867485A00BA6D85 /* GarmentsViewController.swift in Sources */,
+				5F4C558828688A6600177A2C /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F14B11D28672D8B00BA6D85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F4C558F28688E6300177A2C /* MockGarmentsInteractor.swift in Sources */,
+				5F4C558D28688E5A00177A2C /* MockGarmentsRouter.swift in Sources */,
+				5F4C5584286889A500177A2C /* MockAddGarmentInteractor.swift in Sources */,
+				5F4C55822868895B00177A2C /* AddGarmentPresenterTests.swift in Sources */,
+				5F4C559128688E7400177A2C /* MockGarmentsDisplay.swift in Sources */,
+				5F4C558B28688E1D00177A2C /* GarmentsPresenterTests.swift in Sources */,
+				5F4C5586286889B000177A2C /* MockAddGarmentRouter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F14B12328672D8B00BA6D85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F14B10728672D8700BA6D85 /* Garmentt */;
+			targetProxy = 5F14B12228672D8B00BA6D85 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5F14B11128672D8700BA6D85 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F14B11228672D8700BA6D85 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5F14B11928672D8B00BA6D85 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F14B11A28672D8B00BA6D85 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5F14B13328672D8B00BA6D85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5F14B13428672D8B00BA6D85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5F14B13628672D8B00BA6D85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Garmentt/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanith.garmentt.Garmentt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5F14B13728672D8B00BA6D85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Garmentt/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanith.garmentt.Garmentt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		5F14B13928672D8B00BA6D85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanith.garmentt.GarmenttTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Garmentt.app/Garmentt";
+			};
+			name = Debug;
+		};
+		5F14B13A28672D8B00BA6D85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanith.garmentt.GarmenttTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Garmentt.app/Garmentt";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F14B10328672D8700BA6D85 /* Build configuration list for PBXProject "Garmentt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F14B13328672D8B00BA6D85 /* Debug */,
+				5F14B13428672D8B00BA6D85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F14B13528672D8B00BA6D85 /* Build configuration list for PBXNativeTarget "Garmentt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F14B13628672D8B00BA6D85 /* Debug */,
+				5F14B13728672D8B00BA6D85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F14B13828672D8B00BA6D85 /* Build configuration list for PBXNativeTarget "GarmenttTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F14B13928672D8B00BA6D85 /* Debug */,
+				5F14B13A28672D8B00BA6D85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5F14B11428672D8700BA6D85 /* Garmentt.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5F14B11528672D8700BA6D85 /* Garmentt.xcdatamodel */,
+			);
+			currentVersion = 5F14B11528672D8700BA6D85 /* Garmentt.xcdatamodel */;
+			path = Garmentt.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5F14B10028672D8700BA6D85 /* Project object */;
+}
